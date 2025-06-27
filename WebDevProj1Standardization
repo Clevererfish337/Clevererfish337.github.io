@@ -1,0 +1,68 @@
+/*standardization */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML & CSS Standardization</title>
+  <link rel="stylesheet" href="WebDevProj1Stylesheet.css" />
+</head>
+<body>
+  <header>
+    <h1>W3C Standardization & Interoperability</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="WebDevProj1Standardization.html">HTML & CSS</a></li>
+        <li><a href="WebDevProj1WC3.html">AI & Future Web</a></li>
+        <li><a href="WebDevProj1References.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>HTML & CSS Standardization</h2>
+    <p>W3C plays a key role in making sure HTML and CSS are interpreted consistently across browsers. This standardization prevents web developers from needing to write different code for each browser.</p>
+    
+    <h3>Milestones</h3>
+    <ul>
+      <li>1996 - CSS 1.0 introduced: separation of content and style</li>
+      <li>1997 - HTML 4.0 standardized: improved structure and dynamic content</li>
+      <li>2014 - HTML5 finalized: native multimedia without plugins</li>
+    </ul>
+
+    <h3>Example Table</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Standard</th>
+          <th>Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1996</td>
+          <td>CSS 1.0</td>
+          <td>Separated content from presentation</td>
+        </tr>
+        <tr>
+          <td>1997</td>
+          <td>HTML 4.0</td>
+          <td>Structured and dynamic content</td>
+        </tr>
+        <tr>
+          <td>2014</td>
+          <td>HTML5</td>
+          <td>Enabled native multimedia support</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>This site is a class project for IT 3203. Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank">course website</a>.</p>
+  </footer>
+</body>
+</html>
