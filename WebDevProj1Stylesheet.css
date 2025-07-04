@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: #333;
-  animation: fadeInBody 2s ease-in;
+  animation: fadeInBody 5s ease-in;
 }
 
 @keyframes fadeInBody {
