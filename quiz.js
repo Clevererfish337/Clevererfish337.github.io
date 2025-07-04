@@ -9,12 +9,12 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   if (q1) {
     if (q1.value === "1") {
       score++;
-      resultsHTML += "<li>Question 1: Correct ✅</li>";
+      resultsHTML += "<li>Question 1: Correct U+2705</li>";
     } else {
-      resultsHTML += "<li>Question 1: Incorrect ❌ (Correct: 2014)</li>";
+      resultsHTML += "<li>Question 1: Incorrect U+274C (Correct: 2014)</li>";
     }
   } else {
-    resultsHTML += "<li>Question 1: No answer ❌ (Correct: 2014)</li>";
+    resultsHTML += "<li>Question 1: No answer U+274C (Correct: 2014)</li>";
   }
 
   // Question 2 (multiple correct)
@@ -28,9 +28,9 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   });
   if (allCorrect) {
     score++;
-    resultsHTML += "<li>Question 2: Correct ✅</li>";
+    resultsHTML += "<li>Question 2: Correct U+2705</li>";
   } else {
-    resultsHTML += "<li>Question 2: Incorrect ❌ (Correct: WebAuthn, Content Security Policy)</li>";
+    resultsHTML += "<li>Question 2: Incorrect U+274C (Correct: WebAuthn, Content Security Policy)</li>";
   }
 
   // Question 3
@@ -38,12 +38,12 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   if (q3) {
     if (q3.value === "1") {
       score++;
-      resultsHTML += "<li>Question 3: Correct ✅</li>";
+      resultsHTML += "<li>Question 3: Correct U+2705</li>";
     } else {
-      resultsHTML += "<li>Question 3: Incorrect ❌ (Correct: Web Content Accessibility Guidelines)</li>";
+      resultsHTML += "<li>Question 3: Incorrect U+274C (Correct: Web Content Accessibility Guidelines)</li>";
     }
   } else {
-    resultsHTML += "<li>Question 3: No answer ❌ (Correct: Web Content Accessibility Guidelines)</li>";
+    resultsHTML += "<li>Question 3: No answer U+274C (Correct: Web Content Accessibility Guidelines)</li>";
   }
 
   // Question 4 (fill-in-the-blank)
@@ -52,12 +52,12 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   if (q4) {
     if (correctQ4Answers.includes(q4)) {
       score++;
-      resultsHTML += "<li>Question 4: Correct ✅</li>";
+      resultsHTML += "<li>Question 4: Correct U+2705</li>";
     } else {
-      resultsHTML += "<li>Question 4: Incorrect ❌ (Correct: Tim Berners-Lee)</li>";
+      resultsHTML += "<li>Question 4: Incorrect U+274C (Correct: Tim Berners-Lee)</li>";
     }
   } else {
-    resultsHTML += "<li>Question 4: No answer ❌ (Correct: Tim Berners-Lee)</li>";
+    resultsHTML += "<li>Question 4: No answer U+274C(Correct: Tim Berners-Lee)</li>";
   }
 
   // Question 5
@@ -65,18 +65,18 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   if (q5) {
     if (q5.value === "1") {
       score++;
-      resultsHTML += "<li>Question 5: Correct ✅</li>";
+      resultsHTML += "<li>Question 5: Correct U+2705</li>";
     } else {
-      resultsHTML += "<li>Question 5: Incorrect ❌ (Correct: HTML)</li>";
+      resultsHTML += "<li>Question 5: Incorrect U+274C(Correct: HTML)</li>";
     }
   } else {
-    resultsHTML += "<li>Question 5: No answer ❌ (Correct: HTML)</li>";
+    resultsHTML += "<li>Question 5: No answer U+274C (Correct: HTML)</li>";
   }
 
   resultsHTML += "</ul>";
 
   // Pass/Fail determination
-  let pass = score >= 3 ? "<strong style='color: green;'>PASS ✅</strong>" : "<strong style='color: red;'>FAIL ❌</strong>";
+  let pass = score >= 3 ? "<strong style='color: green;'>PASS U+2705</strong>" : "<strong style='color: red;'>FAIL U+274C</strong>";
 
   // Display result
   const result = document.getElementById("result");
