@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W3C Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="quiz.js"></script>
+</head>
+<body>
+  <header>
+    <h1>W3C Standardization Quiz</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="WebDevProj1Standardization.html">HTML & CSS</a></li>
+        <li><a href="WebDevProj1WC3Page.html">AI & Future Web</a></li>
+        <li><a href="WebDevProj1ReferencesPage.html">References</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="quiz-container">
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. What year was HTML5 finalized?</p>
+        <label><input type="radio" name="q1" value="0" /> 2008</label><br />
+        <label><input type="radio" name="q1" value="0" /> 2010</label><br />
+        <label><input type="radio" name="q1" value="1" /> 2014</label><br />
+        <label><input type="radio" name="q1" value="0" /> 2016</label>
+      </div>
+
+      <div class="question">
+        <p>2. Which of the following is a W3C security standard? (Choose all that apply)</p>
+        <label><input type="checkbox" name="q2" value="1" /> WebAuthn</label><br />
+        <label><input type="checkbox" name="q2" value="1" /> Content Security Policy</label><br />
+        <label><input type="checkbox" name="q2" value="0" /> SHA-256</label><br />
+        <label><input type="checkbox" name="q2" value="0" /> DNSSEC</label>
+      </div>
+
+      <div class="question">
+        <p>3. What does WCAG stand for?</p>
+        <label><input type="radio" name="q3" value="0" /> World Content Accessibility Guidelines</label><br />
+        <label><input type="radio" name="q3" value="1" /> Web Content Accessibility Guidelines</label><br />
+        <label><input type="radio" name="q3" value="0" /> Web Compatibility Access Group</label><br />
+        <label><input type="radio" name="q3" value="0" /> Website Compliance and Accessibility Guide</label>
+      </div>
+
+      <div class="question">
+        <p>4. Fill in the blank: The W3C was founded by ________.</p>
+        <input type="text" id="q4" name="q4" />
+      </div>
+
+      <div class="question">
+        <p>5. Which technologies are standardized by W3C?</p>
+        <label><input type="radio" name="q5" value="0" /> TCP/IP</label><br />
+        <label><input type="radio" name="q5" value="1" /> HTML</label><br />
+        <label><input type="radio" name="q5" value="0" /> Java</label><br />
+        <label><input type="radio" name="q5" value="0" /> Python</label>
+      </div>
+
+      <button type="submit">Submit Quiz</button>
+      <button type="button" onclick="resetQuiz()">Restart Quiz</button>
+    </form>
+
+    <div id="result"></div>
+  </main>
+
+  <footer>
+    <p>This site is a class project for IT 3203. Visit the <a href="https://ksuweb.github.io/IT3203/" target="_blank">course website</a>.</p>
+  </footer>
+</body>
+</html>
