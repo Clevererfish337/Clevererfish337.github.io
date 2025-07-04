@@ -1,91 +1,111 @@
 /*stylesheet*/
 
-/* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   color: #333;
+  animation: fadeInBody 2s ease-in;
 }
 
-/* Header & Nav */
+@keyframes fadeInBody {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 header {
-  background-color: #004080;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 1rem;
   text-align: center;
+  animation: slideDown 1s ease-out;
 }
 
-nav .menu {
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.menu {
+  list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
   padding: 0;
-  margin-top: 1rem;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-nav .menu li a {
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  padding: 0.5rem 1rem;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/*Hover effect */
-nav .menu li a:hover {
-  background-color: #0066cc;
+.menu a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
-/* Main Content*/
 main {
   padding: 2rem;
-  display: grid;
-  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 1rem;
+  border-radius: 8px;
+  animation: fadeInMain 1.5s ease-in;
 }
 
-/* Lists and Tables */
-ul {
-  padding-left: 1.5rem;
+@keyframes fadeInMain {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-th, td {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
-  text-align: left;
-  background-color: #fff;
-}
-
-th {
-  background-color: #e0e0e0;
-}
-
-/*Footer */
 footer {
-  background-color: #f1f1f1;
-  padding: 1rem;
   text-align: center;
-  font-size: 0.9rem;
-  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeInFooter 2s ease-in;
 }
 
-/* Class Selector */
-section {
-  border-left: 4px solid #004080;
-  padding-left: 1rem;
+@keyframes fadeInFooter {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* ID Selector */
-#highlight {
-  background-color: yellow;
-  font-weight: bold;
+.quiz-container .question {
+  margin-bottom: 2rem;
+}
+
+.quiz-container button {
+  margin-right: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quiz-container button:hover {
+  background-color: #005a99;
+  transform: scale(1.05);
+}
+
+h1:hover, h2:hover, h3:hover {
+  color: #007acc;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
