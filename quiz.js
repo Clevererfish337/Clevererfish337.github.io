@@ -6,7 +6,7 @@ document.getElementById("quiz-form").addEventListener("submit", function(event) 
   const q1 = document.querySelector('input[name="q1"]:checked');
   if (q1 && q1.value === "1") score++;
 
-  // Question 2 (multiple correct)
+  // Question 2 (multiple)
   const q2 = document.querySelectorAll('input[name="q2"]');
   let q2Correct = [true, true, false, false];
   let allCorrect = true;
