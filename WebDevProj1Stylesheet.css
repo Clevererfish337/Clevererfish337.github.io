@@ -24,7 +24,7 @@ a:hover {
     color: #003366;
 }
 
-/* Fade-in Animation */
+/* Fade-in*/
 @keyframes fadeInBody {
     from {
         opacity: 0;
@@ -65,7 +65,6 @@ nav a.active, nav a:hover {
     border-bottom: 2px solid #0066cc;
 }
 
-/* Header Fade Animation */
 @keyframes fadeInHeader {
     from {
         opacity: 0;
@@ -77,9 +76,9 @@ nav a.active, nav a:hover {
     }
 }
 
-/* Hero Section */
+/* Everything */
 .hero {
-    background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.4); 
     text-align: center;
     padding: 4rem 1rem;
     position: relative;
@@ -91,7 +90,7 @@ nav a.active, nav a:hover {
     z-index: 1;
 }
 .hero h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -99,7 +98,6 @@ nav a.active, nav a:hover {
     font-size: 1.2rem;
 }
 
-/* Hero Fade Animation */
 @keyframes fadeInHero {
     from {
         opacity: 0;
@@ -136,7 +134,6 @@ nav a.active, nav a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Card Fade Animation */
 @keyframes fadeInCard {
     from {
         opacity: 0;
@@ -148,6 +145,20 @@ nav a.active, nav a:hover {
     }
 }
 
+/* Content Containers */
+.container, .card, .content-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    animation: fadeInCard 1s ease forwards;
+    opacity: 0;
+}
+.container h2, .card h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -157,7 +168,6 @@ footer {
     animation: fadeInFooter 2s ease;
 }
 
-/* Footer Fade Animation */
 @keyframes fadeInFooter {
     from {
         opacity: 0;
