@@ -2,17 +2,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W3C Quiz</title>
-  <link rel="stylesheet" href="WebDevProj1Stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - W3C Site</title>
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="quiz.js"></script>
 </head>
 <body>
   <header>
     <h1>W3C Standardization Quiz</h1>
     <nav>
-      <ul class="menu">
+      <ul class="container">
         <li><a href="index.html">Home</a></li>
         <li><a href="html_css.html">HTML & CSS</a></li>
         <li><a href="ai_future.html">AI & Future Web</a></li>
@@ -22,7 +22,7 @@
     </nav>
   </header>
 
-  <main class="quiz-container">
+  <main class="container">
     <form id="quiz-form">
       <div class="question">
         <p>1. What year was HTML5 finalized?</p>
@@ -65,7 +65,7 @@
       <button type="button" onclick="resetQuiz()">Restart Quiz</button>
     </form>
 
-    <div id="result"></div>
+    <div id="result" class= "content-section"></div>
   </main>
 
   <footer>
