@@ -109,6 +109,10 @@ nav a.active, nav a:hover {
     }
 }
 
+.spacer {
+  height: 2rem;
+}
+
 /* Table of Contents */
 .toc {
     display: grid;
