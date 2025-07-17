@@ -163,6 +163,48 @@ nav a.active, nav a:hover {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Two-column layout for AI and Futre page*/
+.two-column {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    animation: fadeInCard 1s ease forwards;
+    opacity: 0;
+}
+
+.sidebar {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    animation: fadeInCard 1s ease forwards;
+    opacity: 0;
+}
+
+.sidebar-section {
+    margin-bottom: 1.5rem;
+}
+.sidebar h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        margin-top: 1.5rem;
+    }
+}
 /* Footer */
 footer {
     text-align: center;
