@@ -199,10 +199,21 @@ nav a.active, nav a:hover {
 
 @media (max-width: 900px) {
     .two-column {
-        grid-template-columns: 1fr;
+        display: block;
     }
+
+    .main-content, .sidebar {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
     .sidebar {
-        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .sidebar-image img {
+        width: 100%;
+        height: auto;
     }
 }
 /* Footer */
