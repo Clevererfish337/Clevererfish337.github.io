@@ -216,6 +216,15 @@ nav a.active, nav a:hover {
         height: auto;
     }
 }
+.sidebar-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
 /* Footer */
 footer {
     text-align: center;
